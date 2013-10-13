@@ -41,6 +41,7 @@ This can be imported using `ModuleImport.import`:
 * Load paths in a similar way to require, searching load paths etc
 * Caching of loaded modules
 * Tests
+* More Examples
 * Publish as a rubygem
 
 ## Development
