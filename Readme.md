@@ -43,6 +43,7 @@ This can be imported using `ModuleImport.import`:
 * Tests
 * More Examples
 * Publish as a rubygem
+* Investigate importing on a thread to force seperation (using Marshal for passing `EXPORTS` back)
 
 ## Development
 
