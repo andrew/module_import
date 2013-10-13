@@ -18,6 +18,8 @@ It's slower, we're using eval which is pretty slow.
 
 Doesn't work with existing libraries. it's not a replacement for require but can be used along side it.
 
+Likely won't work with C extensions.
+
 ## Example
 
 Given a module in file `line.rb`, where the `Line` module is set as `EXPORTS`:
