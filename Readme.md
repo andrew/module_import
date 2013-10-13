@@ -1,8 +1,8 @@
 # Module Import
 
-Namespace all imported modules rather than poluting the global namespace.
+Namespace all imported modules rather than polluting the global namespace.
 
-This approach was inspired by the Node.js Module loading system.
+This is an investigation into different ways of loading modules inspired by the Node.js Module loading system.
 
 When a file is loaded, the result is encapsulated inside a module, and the desired module/class is exported as EXPORT and returned from the function.
 
