@@ -24,20 +24,23 @@ Likely won't work with C extensions.
 
 Given a module in file `line.rb`, where the `Line` module is set as `EXPORTS`:
 
-    module Line
-      def Line.check
-        puts 'Line check'
-      end
-    end
+```ruby
+module Line
+  def Line.check
+    puts 'Line check'
+  end
+end
 
-    EXPORTS = Line
-
+EXPORTS = Line
+```
+    
 This can be imported using `ModuleImport.import`:
 
-    LineModule = ModuleImport.import('./other_line.rb')
+```ruby
+LineModule = ModuleImport.import('./other_line.rb')
     
-    LineModule.check
-    
+LineModule.check
+```    
 ## TODO
 
 * Load paths in a similar way to require, searching load paths etc
