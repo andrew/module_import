@@ -6,6 +6,8 @@ This is an investigation into different ways of loading modules inspired by the 
 
 When a file is loaded, the result is encapsulated inside a module, and the desired module/class is exported as `EXPORTS` and returned from the function.
 
+
+
 ### Benefits
 
 Better encapsulation, there are reduced side effects from importing modules. 
@@ -40,7 +42,14 @@ This can be imported using `ModuleImport.import`:
 LineModule = ModuleImport.import('./other_line.rb')
     
 LineModule.check
-```    
+```
+
+## Alternatives
+
+Unsurprisingly, I'm not the first person to have this idea, @soveran had a similar idea a few years ago: https://github.com/soveran/cargo/
+
+The implementation is a bit cleaner, it uses Kernel.load which loads the file completely seperately and returns only the exported module.
+
 ## TODO
 
 * Load paths in a similar way to require, searching load paths etc
