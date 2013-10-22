@@ -1,6 +1,6 @@
 module ModuleImport
   def self.import(path)
-    # create empty module for encapulating code
+    # create empty module for encapsulating code
     self.send(:remove_const, "Import") if self.const_defined?('Import')
     imported_module = self.const_set "Import", Module.new
     
